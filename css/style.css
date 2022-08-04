@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: hsl(30, 38%, 92%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.picture img {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+.desc .product {
+    margin-top: 25px;
+    padding-left: 30px;
+    letter-spacing: 4px;
+}
+
+.title h1 {
+    margin-top: 1px;
+    margin-bottom: 9px;
+    padding-left: 30px;
+    font-family: serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.desc p {
+    margin-top: 1px;
+    padding-left: 30px;
+    color: hsl(228, 12%, 48%);
+}
+
+.prices {
+    display: flex;
+    padding-left: 30px;
+    font-family: serif;
+}
+
+.prices .old {
+    color: hsl(228, 12%, 48%);
+    margin-left: 15px;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.prices .new {
+    margin-top: 5px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    margin-top: 1px;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(158, 41%, 23%);
+    cursor: pointer;
+}
+
+ul {
+    list-style-image: url("/images/icon-cart.svg");
+}
+
+li {
+    padding-left: 10px;
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3%;
+        width: 800px;
+        height: 500px;
+    }
+
+    .desc .product {
+        display: flex;
+        font-size: 25px;
+        margin-top: 20%;
+        justify-content: center;
+    }
+
+    .picture img {
+        border-radius: 15px 0 0 0;
+    }
+
+    button {
+        margin-bottom: 25px;
+    }
+}
