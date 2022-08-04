@@ -2,38 +2,47 @@ body {
     margin: 0;
     padding: 0;
     background: hsl(30, 38%, 92%);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 10px auto;
     background: white;
     width: 400px;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.picture {
+    margin-top: 5%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .picture img {
-    padding: 0;
-    margin: 0;
+    margin-bottom: 0;
     width: 400px;
     border-radius: 15px 15px 0 0;
 }
 
 .desc .product {
-    margin-top: 25px;
+    margin-top: 30px;
     padding-left: 30px;
     letter-spacing: 4px;
 }
 
 .title h1 {
     margin-top: 1px;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
     padding-left: 30px;
-    font-family: serif;
+    font-family: 'Fraunces', serif;
+    font-size: 33px;
     color: hsl(212, 21%, 14%);
 }
 
@@ -46,7 +55,7 @@ body {
 .prices {
     display: flex;
     padding-left: 30px;
-    font-family: serif;
+    font-family: 'Fraunces', serif;
 }
 
 .prices .old {
@@ -64,48 +73,69 @@ body {
     margin-bottom: 10px;
 }
 
-button {
+.button {
     margin: 10px;
     margin-top: 1px;
+    padding: 15px;
     background: hsl(158, 36%, 37%);
     color: white;
     font-weight: 700;
     font-size: 17px;
+    text-align: center;
     border-radius: 15px;
-    border: none;
 }
 
-button:hover {
+.button:hover {
     background-color: hsl(158, 41%, 23%);
     cursor: pointer;
 }
 
-ul {
-    list-style-image: url('/images/icon-cart.svg');
-}
-
-li {
-    padding-left: 10px;
+.cart {
+    margin-right: 10px;
 }
 
 @media (min-width: 800px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 3%;
-        width: 800px;
-        height: 500px;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .desc .product {
-        display: flex;
-        font-size: 25px;
-        margin-top: 20%;
-        justify-content: center;
+    .container {
+        margin-top: 3%;
+        margin-left: 0;
+        margin-right: 50px;
+        width: 350px;
+        height: 500px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .desc {
+        margin-top: 20px;
+    }
+
+    .prices {
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    
+    .prices .new {
+        font-size: 40px;
+    }
+
+    .prices .old {
+        margin-top: 12.5px;
+        font-size: 20px;
+    }
+
+    .picture {
+        margin-top: 3%;
     }
 
     .picture img {
-        border-radius: 15px 0 0 0;
+        margin-top: -8px;
+        border-radius: 15px 0 0 15px;
+        height: 500px;
     }
 
     button {
