@@ -7,14 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat&display=swap" rel="stylesheet"> 
+
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
-  <div class="container">
-    <div class="picture">
-      <img src="images/image-product-mobile.jpg" alt="picture">
-    </div>
 
+  <picture class="picture">
+    <source media="(min-width: 800px)" srcset="/images/image-product-desktop.jpg">
+    <img src="/images/image-product-mobile.jpg" alt="Perfume Bottle">
+  </picture>
+
+  <div class="container">
     <div class="desc">
       <p class="product">PERFUME</p>
     </div>
@@ -32,12 +38,9 @@
       <p class="new">$149.99</p>
       <p class="old">$169.99</p>
     </div>
-    
-    <button>
-      <ul>
-        <li>Add to Cart</li>
-      </ul>
-    </button>
+
+    <a href="#" class="button">
+      <img src="/images/icon-cart.svg" class="cart">Add To Cart</a>
   </div>
 </body>
 </html>
