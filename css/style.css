@@ -81,7 +81,7 @@ button:hover {
 }
 
 ul {
-    list-style-image: url(/images/icon-cart.svg);
+    list-style-image: url('/images/icon-cart.svg');
 }
 
 li {
